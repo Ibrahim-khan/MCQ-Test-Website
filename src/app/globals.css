@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .header_top__icon_wrapper{
+        @apply bg-gray-200 rounded-md p-[6px] text-[14px] cursor-pointer hover:bg-accent hover:text-white
+    }
+}
+
+body {
+  
+}
+
+.navbar__link:hover {
+    color: #ff8f9c;
+    transition: all 0.4s;
+}
+
+.navbar__link::after {
+    position:absolute;
+    content: "";
+    background-color: #ff8f9c;
+    height: 3px;
+    width: fit-content;
+    bottom: -5px;
+    left: 0;
+    scale: 0;
+    transform-origin: left;
+    transform: all 0.4s;
+}
+
+.navbar__link:hover::after {
+    scale: 1;
+}
+
+/* styles/globals.css */
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 0 10px;
+  }
+
+  .card-image {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    float:center;
+    place-items: center;
+    justify-items: center;
+    margin:auto;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
